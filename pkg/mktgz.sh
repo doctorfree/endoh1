@@ -53,8 +53,10 @@ do
     ${SUDO} chown root:${group} ${OUT_DIR}/${dir}
 done
 
-${SUDO} cp endoh1 ${OUT_DIR}/${DESTDIR}/bin/endoh1
-${SUDO} cp endoh1_color ${OUT_DIR}/${DESTDIR}/bin/endoh1_color
+${SUDO} cp show_endo ${OUT_DIR}/${DESTDIR}/bin/show_endo
+${SUDO} cp endoh1 ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1
+${SUDO} cp endoh1_color ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1_color
+${SUDO} cp *.txt *.c ${OUT_DIR}/${DESTDIR}/share/${PKG}
 ${SUDO} cp LICENSE ${OUT_DIR}/${DESTDIR}/share/${PKG}
 ${SUDO} cp README.md ${OUT_DIR}/${DESTDIR}/share/${PKG}
 ${SUDO} cp VERSION ${OUT_DIR}/${DESTDIR}/share/${PKG}

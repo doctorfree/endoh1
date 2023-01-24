@@ -49,8 +49,10 @@ package() {
     [ -d ${pkgdir}/${dir} ] || mkdir ${pkgdir}/${dir}
   done
 
-  cp endoh1 ${pkgdir}/${destdir}/bin/endoh1
-  cp endoh1_color ${pkgdir}/${destdir}/bin/endoh1_color
+  cp show_endo ${pkgdir}/${destdir}/bin/show_endo
+  cp endoh1 ${pkgdir}/${destdir}/share/${pkgname}/endoh1
+  cp endoh1_color ${pkgdir}/${destdir}/share/${pkgname}/endoh1_color
+  cp *.txt *.c ${pkgdir}/${destdir}/share/${pkgname}
 
   cp LICENSE ${pkgdir}/${destdir}/share/${pkgname}
   cp README.md ${pkgdir}/${destdir}/share/${pkgname}

@@ -59,3 +59,11 @@ make endoh1_deobfuscate  # slightly easier to read version (formatted at least)
 ```
 
 https://github.com/doctorfree/endoh1/blob/master/endoh1_deobfuscate.c
+
+## Installation
+
+See the [Release Notes](pkg/release.md) for platform specific installation instructions.
+
+## Usage
+
+Execute the `show_endo` command to view the prepared simulation.

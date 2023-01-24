@@ -2,8 +2,7 @@
 
 ENDO_DIRS="/usr/local/share/endoh1"
 
-ENDO_FILES="/usr/local/bin/endoh1 \
-            /usr/local/bin/endoh1_color"
+ENDO_FILES="/usr/local/bin/show_endo"
 
 user=`id -u -n`
 
