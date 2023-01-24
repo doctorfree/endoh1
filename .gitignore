@@ -1,3 +1,12 @@
 endoh1
 endoh1_color
 endoh1_deobfuscate
+
+# vim files
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+#do not ignore .github directory
+!.github

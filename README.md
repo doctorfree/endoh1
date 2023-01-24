@@ -1,6 +1,15 @@
+# Endoh1
 
+A tiny fluid simulator that fits in 80x25 terminal, written by Yusuke Endoh.
 
-original submission:
+This program was a submission to the IOCCC obfuscated C code contest:
+
+http://ioccc.org/2012/endoh1
+
+This repository serves primarily as packaging and integration of `endoh1` for
+the [Asciiville project](https://github.com/doctorfree/Asciiville#readme).
+
+## Original submission
 
 ```
 
@@ -33,33 +42,15 @@ original submission:
 
 ![](ascii-fluid.gif)
 
-# original video
+## Video
 
 https://www.youtube.com/watch?v=QMYfkOtYYlg
 
-# original code is here:
+## Original code
 
 http://ioccc.org/2012/endoh1
 
-when attempting this command:
-
-`wget -r http://ioccc.org/2012/endoh1/`
-
-it would grab a slew more projects. 
-
-Instead I pushed it to this repo and even made a docker
-to make life easier for those interested in studying this
-sort of stuff. 
-
-
-# docker repo
-
-```bash
-git pull copremesis/ascii-fluid
-docker run -it -w /root/endoh1 copremesis/ascii-fluid bash
-```
-
-# compile
+## Compile
 
 ```bash
 make                     # default endoh1
@@ -67,23 +58,4 @@ make endoh1_color        # colorized version
 make endoh1_deobfuscate  # slightly easier to read version (formatted at least)
 ```
 
-https://github.com/copremesis/endoh1/blob/master/endoh1_deobfuscate.c
-
-I can only _imagine_ -- as an exercise -- to attempt to translate this into:
-* rust
-* kotlin
-* clojure
-* groovy
-* java
-* python
-* php
-* go
-* node
-* haskell
-* erlang
-* elixir
-* ruby
-* perl
-
-
-
+https://github.com/doctorfree/endoh1/blob/master/endoh1_deobfuscate.c
