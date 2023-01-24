@@ -5,6 +5,7 @@ endoh1_deobfuscate
 dist/*
 pkg/dist/*
 releases/*
+tmp/*
 
 # vim files
 .*.sw[a-z]
