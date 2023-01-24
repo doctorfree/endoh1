@@ -82,7 +82,7 @@ Removal of the package on RPM based systems can be accomplished by issuing the c
 sudo dnf remove endoh1
 ```
 
-On systems for which the manual installation was performed using the `Install-bin.sh` script, remove Btop manually by downloading the `Uninstall-bin.sh` script and, as a user with sudo privilege, execute the commands:
+On systems for which the manual installation was performed using the `Install-bin.sh` script, remove Endoh1 manually by downloading the `Uninstall-bin.sh` script and, as a user with sudo privilege, execute the commands:
 
 ```shell
 chmod 755 Uninstall-bin.sh

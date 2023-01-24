@@ -160,7 +160,7 @@ get_available_packages
     shift
     PKG_NAMES="$*"
     [ "${PKG_AVAILABLE}" ] && {
-      echo "Currently available btop packages:"
+      echo "Currently available endoh1 packages:"
       echo ""
       for avaipkg in ${PKG_AVAILABLE}
       do
