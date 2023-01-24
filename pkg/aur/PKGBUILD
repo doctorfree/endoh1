@@ -68,4 +68,6 @@ package() {
   do
     chmod 644 "${f}"
   done
+  chmod 755 ${pkgdir}/${destdir}/share/${pkgname}/endoh1 \
+            ${pkgdir}/${destdir}/share/${pkgname}/endoh1_color
 }
