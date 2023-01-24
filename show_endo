@@ -97,6 +97,21 @@ next_input() {
 
 cols=`tput cols 2>/dev/null`
 lines=`tput lines 2>/dev/null`
+[ "${cols}" ] && [ "${lines}" ] || {
+  export TERM=xterm-256color
+  cols=`tput cols 2>/dev/null`
+  lines=`tput lines 2>/dev/null`
+  [ "${cols}" ] && [ "${lines}" ] || {
+    echo "The ASCII fluid dynamics simulations requires a terminal window"
+    echo "of size 80x24 or greater."
+    echo ""
+    echo "This program could not determine the terminal window size."
+    echo ""
+    echo "Install the appropriate terminfo entry for this terminal emulator"
+    echo "or set the TERM environment variable and run this command again."
+    exit 1
+  }
+}
 [ ${cols} -ge 80 ] && [ ${lines} -ge 24 ] || {
   echo "The ASCII fluid dynamics simulations requires a terminal window"
   echo "of size 80x24 or greater. This terminal window appears to be ${cols}x${lines}"
