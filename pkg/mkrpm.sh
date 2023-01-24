@@ -68,6 +68,8 @@ find ${OUT_DIR}/${DESTDIR}/share/${PKG} -type f | while read f
 do
   ${SUDO} chmod 644 "${f}"
 done
+${SUDO} chmod 755 ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1 \
+                  ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1_color
 ${SUDO} chown -R root:root ${OUT_DIR}/${DESTDIR}/share
 ${SUDO} chown -R root:root ${OUT_DIR}/${DESTDIR}/bin
 

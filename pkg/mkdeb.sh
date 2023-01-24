@@ -93,8 +93,6 @@ ${SUDO} cp README.md ${OUT_DIR}/${DESTDIR}/share/${PKG}
 ${SUDO} cp VERSION ${OUT_DIR}/${DESTDIR}/share/${PKG}
 
 ${SUDO} chmod 755 ${OUT_DIR}/${DESTDIR}/bin/* \
-                  ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1 \
-                  ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1_color \
                   ${OUT_DIR}/${DESTDIR}/bin
 find ${OUT_DIR}/${DESTDIR}/share/${PKG} -type d | while read dir
 do
@@ -104,6 +102,8 @@ find ${OUT_DIR}/${DESTDIR}/share/${PKG} -type f | while read f
 do
   ${SUDO} chmod 644 "${f}"
 done
+${SUDO} chmod 755 ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1 \
+                  ${OUT_DIR}/${DESTDIR}/share/${PKG}/endoh1_color
 ${SUDO} chown -R root:root ${OUT_DIR}/${DESTDIR}/share
 ${SUDO} chown -R root:root ${OUT_DIR}/${DESTDIR}/bin
 

@@ -2,6 +2,10 @@ endoh1
 endoh1_color
 endoh1_deobfuscate
 
+dist/*
+pkg/dist/*
+releases/*
+
 # vim files
 .*.sw[a-z]
 *.un~
