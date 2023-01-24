@@ -1,0 +1,14 @@
+pkgbase = endoh1
+	pkgdesc = Obfuscated C code ascii fluid dynamics simulator
+	pkgver = v1.0.1r1
+	pkgrel = 1
+	url = https://github.com/doctorfree/endoh1
+	arch = x86_64
+	arch = armv7h
+    license=('CCPL:by-sa')
+	makedepends = zip
+	depends = gcc-libs
+	source = endoh1::git+https://github.com/doctorfree/endoh1.git
+	sha256sums = SKIP
+
+pkgname = endoh1
