@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo rm -rf dist releases endoh1
+[ -f Makefile ] && make clobber
