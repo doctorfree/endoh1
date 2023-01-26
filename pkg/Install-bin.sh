@@ -49,7 +49,13 @@ pkgver=`echo ${pkgvra} | awk -F '_' '{ print $2 }'`
 pkgrag=`echo ${ARCHIVE} | awk -F '-' '{ print $2 }'`
 pkgrel=`echo ${pkgrag} | awk -F '.' '{ print $1 }'`
 pkgarc=`echo ${pkgrag} | awk -F '.' '{ print $2 }'`
-pkgsuf=`echo ${pkgrag} | awk -F '.' '{ print $3 }'`
+if [ "${pkgarc}" == "Darwin" ]
+then
+  pkgarc=`echo ${pkgrag} | awk -F '.' '{ print $3 }'`
+  pkgsuf=`echo ${pkgrag} | awk -F '.' '{ print $4 }'`
+else
+  pkgsuf=`echo ${pkgrag} | awk -F '.' '{ print $3 }'`
+fi
 
 echo "Preparing to install ${pkgname} Version ${pkgver} Release ${pkgrel}"
 echo "for architecture ${pkgarc}"
